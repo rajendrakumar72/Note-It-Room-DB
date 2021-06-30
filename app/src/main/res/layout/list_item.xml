@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/listLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="4dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:contentPadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                tools:text="My First Note"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/text_view_title"
+                android:textStyle="bold|italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                tools:text="Note Description"
+                android:layout_below="@id/text_view_title"
+                android:id="@+id/text_view_note"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
